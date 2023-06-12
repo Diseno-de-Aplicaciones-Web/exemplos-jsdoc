@@ -1,8 +1,17 @@
+
+/**
+ * Documentar tipos de datos de variables
+ */
+
 /** @type {String} */
 let texto = "Mira, mira!"
 
 /** @type {(Number|undefined)} */
 let numeroDeVeces
+
+/**
+ * Documentar funcións
+ */
 
 /**
  * Imprime un texto o número de veces que lle indiquemos
