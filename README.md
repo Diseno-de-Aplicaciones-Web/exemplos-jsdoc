@@ -36,6 +36,8 @@ Unha aplicación pode estar escrita de múltiples xeitos, seguindo diferentes or
 
 Con JSDoc podemos indicar qué tipo de dato agarda atopar nunha variable o noso programa.
 
+A etiqueta `@type` especifica que imos indicar un tipo de datos. O tipo de datos en cuestión vai indicado entre chaves. En principio podemos usar os tipos de datos definidos en JavaScript dentro dos comentarios de JSDoc.
+
 ```js
 /** @type {String} */
 let procedemento
@@ -71,3 +73,8 @@ function imprimirVariasVeces(texto, numeroDeVeces) {
     return true
 }
 ```
+
+## Referencias:
+* Referencia rápida: https://www.typescriptlang.org/docs/handbook/jsdoc-supported-types.html
+* Documentar tipado de variables: https://jsdoc.app/tags-type.html
+* Crear tipos personalizados: https://jsdoc.app/tags-typedef.html
