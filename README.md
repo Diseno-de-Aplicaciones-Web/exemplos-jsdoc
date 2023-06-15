@@ -107,8 +107,26 @@ Podemos definir arrays mixtos (suele ser mala idea).
 const turnosMezcladosConUsuarios = [42, "42"]
 ```
 
+## Definir datos estructurados en arrays ou obxetos
+
+Tamén podemos documentar datos que recibimos estructurados como arrays ou obxectos. Isto pode ser moi interesante para documentar compoñentes de React.
+
+```js
+/** @type {[String, Number, Boolean]} */
+const usuarioTupla = [ nome, idade, casado ]
+
+/** @type {{nome: String, idade: Number, casado: Boolean}} */
+const usuarioObxeto = { nome, idade, casado }
+
+/** @params {{idUsuario:Number}} props */
+function PerfilUsuario({idUsuario}){
+    return(<></>)
+}
+```
+
 ## Referencias:
 * Referencia rápida: https://devhints.io/jsdoc
 * Otra referencia rápida: https://www.typescriptlang.org/docs/handbook/jsdoc-supported-types.html
 * Documentar tipado de variables: https://jsdoc.app/tags-type.html
 * Crear tipos personalizados: https://jsdoc.app/tags-typedef.html
+* JSDoc y React: https://www.inkoop.io/blog/a-guide-to-js-docs-for-react-js/
