@@ -59,9 +59,8 @@ Nas funcións, ademáis podemos documentar qué tipo de dato é o que a función
 ```js
 /**
  * Imprime un texto o número de veces que lle indiquemos
- * numeroDeVeces ten que ser un número positivo
  * @param {String} texto 
- * @param {Number} numeroDeVeces
+ * @param {Number} numeroDeVeces - Ten que ser un número positivo
  * @returns {Boolean}
  * @example imprimirVariasVeces("Sandman", 3)
  */
