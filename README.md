@@ -63,6 +63,7 @@ Nas funcións, ademáis podemos documentar qué tipo de dato é o que a función
  * @param {String} texto 
  * @param {Number} numeroDeVeces
  * @returns {Boolean}
+ * @example imprimirVariasVeces("Sandman", 3)
  */
 function imprimirVariasVeces(texto, numeroDeVeces) {
     if ( numeroDeVeces < 0 ) return false
@@ -74,7 +75,40 @@ function imprimirVariasVeces(texto, numeroDeVeces) {
 }
 ```
 
+## Tipos de datos personalizados
+
+Se fas POO e defines clases, as clases son os teus tipos de datos personalizados e podes empregalos como tipo en JSDoc. Doutro xeito, podes empregar JSDoc para definir tipos de datos que logo podes usar na documentación.
+
+```js
+/**
+ * Conta de usuario para o acceso á aplicación
+ * @typedef {Object} User
+ * @property {String} username - Unique identifier for human use.
+ * @property {String} password - Human secret for authentication.
+ * @property {Boolean} enabled - Defines if the user account is usable.
+ */
+
+/** @type {User} */
+const user = User.findOne(id: request.body.id)
+```
+
+## Arrays
+
+Podemos definir el tipo de elementos que componen un array.
+
+```js
+/** @type {Number[]} */
+const turnos = [1, 2, 42]
+```
+Podemos definir arrays mixtos (suele ser mala idea).
+
+```js
+ /**  @type {(Number|String)[]} */
+const turnosMezcladosConUsuarios = [42, "42"]
+```
+
 ## Referencias:
-* Referencia rápida: https://www.typescriptlang.org/docs/handbook/jsdoc-supported-types.html
+* Referencia rápida: https://devhints.io/jsdoc
+* Otra referencia rápida: https://www.typescriptlang.org/docs/handbook/jsdoc-supported-types.html
 * Documentar tipado de variables: https://jsdoc.app/tags-type.html
 * Crear tipos personalizados: https://jsdoc.app/tags-typedef.html
