@@ -75,9 +75,8 @@ const usuarioMalFormado = {
 
 /**
  * Función que imprime un __texto__ o número de veces que lle indiquemos.
- * `numeroDeVeces` ten que ser un número positivo.
  * @param {String} texto 
- * @param {Number} numeroDeVeces
+ * @param {Number} numeroDeVeces - ten que ser un número positivo.
  * @returns {Boolean}
  * @example imprimirVariasVeces("Sandman", 3)
  */
