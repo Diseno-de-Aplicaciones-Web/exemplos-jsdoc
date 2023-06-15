@@ -105,3 +105,31 @@ const turnos = [turno1, turno2, turnoMalFormado, 31, "32"]
  * @type {(Turno|Usuario)[]}
  */
 const turnosMezcladosConUsuarios = [turno1, turno2, turnoMalFormado, usuarioCorrecto, usuarioMalFormado, 42, "43"]
+
+let nome = "Dani"
+let idade = 21
+let casado = true
+
+/**
+ * Tamén podemos definir datos que recibimos estructurados
+ * como arrays ou obxectos. 
+*/
+
+/** @type {[String, Number, Boolean]} */
+const usuarioTupla = [ nome, idade, casado ]
+/** @type {{nome: String, idade: Number, casado: Boolean}} */
+const usuarioObxeto = { nome, idade, casado }
+
+/**
+ * Isto é moi útil para documentar compoñentes de React ou os seus hooks.
+ */
+
+/**
+ * Amosa a previsión meteorolóxica
+ * @param {{temperatura:Number, ceo:String, forzaVento:Number, direccion:String}} props
+*/
+function ComponenteDeReact({temperatura, ceo, forzaVento, direccion}){
+    /** @type {[Boolean, import("react").SetStateAction]} */
+    const [visto, setVisto] = useState()
+    return (<></>)
+}
